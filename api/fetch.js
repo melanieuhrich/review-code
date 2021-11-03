@@ -1,5 +1,5 @@
 // FETCH API AND VERIFY FUNCTIONING RESPONSE
-fetch('https://regres.in/api/users')
+fetch('https://reqres.in/api/users')
 	// even when there is a 404 response, fetch always succeeds
 	// the only time you will get an error is when there is an error with fetch itself, not the API you are calling
 	.then((res) => {
@@ -13,7 +13,7 @@ fetch('https://regres.in/api/users')
 	.then((data) => console.log(data));
 
 // FETCH API AND CREATE A NEW USER
-fetch('https://regres.in/api/users', {
+fetch('https://reqres.in/api/users', {
 	// creating a new user for this api
 	method: 'POST',
 	// must tell fetch that we are passing json
